@@ -7,6 +7,10 @@ import { Ionicons } from '@expo/vector-icons';
 
 import AppNavigator from './navigation/AppNavigator';
 
+import io from 'socket.io-client'
+
+const socket = io('http://localhost:3030/')
+
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 
