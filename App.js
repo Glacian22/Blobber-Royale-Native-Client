@@ -9,7 +9,9 @@ import AppNavigator from './navigation/AppNavigator';
 
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:3030/')
+// const socket = io('https://blobber-native.herokuapp.com/')
+// const socket = io('http://10.0.2.2:3030')
+const socket = io('http://localhost:3030')
 
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
