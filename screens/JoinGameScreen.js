@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, View, Text} from "react-native";
+
 class JoinGameScreen extends React.Component {
 
   static navigationOptions = {
@@ -8,7 +9,6 @@ class JoinGameScreen extends React.Component {
   
   render() {
     const {navigate} = this.props.navigation;
-    console.log(this.props.navigation.state.params.message)
     return(
       <View>
         <Text>
